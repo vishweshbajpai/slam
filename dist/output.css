@@ -522,6 +522,14 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -532,6 +540,21 @@ video {
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
   margin: 0;
-  padding: 0;
+}
+
+:root {
+  --primary-blue: "#5A749B";
+  --primary-orange: "#FB860B";
+  --primary-text-color: "#030E1F";
+  --secondary-text-color: "#898989";
+  --blue-tint: "#5A749B1A";
+  --orange-tint: "#FB860B4D";
 }
