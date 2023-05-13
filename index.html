@@ -8,7 +8,7 @@
     <link
       rel="icon"
       type="image/png"
-      href="./src//assets/slamInitialsLogo.png"
+      href="./src/assets/slamInitialsLogo.svg"
     />
     <link href="index.css" rel="stylesheet" />
     <link
@@ -28,8 +28,8 @@
               primaryOrange: "#FB860B",
               primaryTextColor: "#030E1F",
               secondaryTextColor: "#898989",
-              blueTint: "#5A749B1A",
-              orangeTint: "#FB860B4D",
+              blueTint: "rgba(90, 116, 155, 0.1);",
+              orangeTint: "rgba(251, 134, 11, 0.1);",
             },
           },
         },
@@ -37,207 +37,500 @@
     </script>
   </head>
   <body>
-    <div class="sm:px-4 md:px-[12rem] bg-primaryBackground">
-      <header class="flex justify-between items-center py-[1.8rem]">
-        <img src="./src/assets/slamLogo.png" alt="slam logo" />
-        <button
-          type="button"
-          class="bg-primaryOrange rounded-[0.6rem] text-white py-[1.2rem] px-[4.8rem] text-[1.8rem] font-bold"
-        >
-          Get Early Access
-        </button>
+    <div class="bg-primaryBackground">
+      <!-- Header -->
+      <header
+        class="px-[12rem] py-[1rem] m-auto sticky top-0 z-10 backdrop-blur-xl shadow-sm"
+      >
+        <div class="flex justify-between items-center max-w-[128rem] m-auto">
+          <img src="./src/assets/slamLogoBlue.svg" alt="slam logo" />
+          <button
+            type="button"
+            class="bg-primaryOrange rounded-[0.6rem] text-white py-[1.2rem] px-[4.8rem] text-[1.8rem] font-bold shadow-sm"
+          >
+            Get Early Access
+          </button>
+        </div>
       </header>
       <main>
         <!-- Banner -->
-        <section class="h-[60rem] flex flex-col justify-center items-center">
+        <section
+          class="px-[12rem] flex flex-col items-center mt-[10rem] mb-[20rem]"
+        >
           <div class="text-[7.8rem] font-bold text-primaryBlue">
             Start your day with
           </div>
           <div class="relative">
-            <img src="./src/assets/slamWord.png" alt="slam word" />
+            <img src="./src/assets/slamWordBlue.svg" alt="slam word" />
             <img
-              src="./src/assets/underlineOrange.png"
+              src="./src/assets/underlineOrange.svg"
               alt="orange underline"
               class="absolute bottom-[-4rem] left-2"
             />
           </div>
           <div
-            class="text-[2.4rem] text-primaryTextColor font-bold mt-16 text-center"
+            class="text-[2.4rem] text-primaryTextColor font-bold mt-[4rem] text-center"
           >
             One window for complete project management work
           </div>
-          <div class="flex flex-wrap justify-center gap-x-2 gap-y-4 mt-32">
+          <div
+            class="flex flex-wrap justify-center gap-x-[.6rem] gap-y-[1rem] mt-[7.8rem]"
+          >
             <input
               type="text"
-              class="form-control px-[2.4rem] py-[1.8rem] rounded border border-secondaryTextColor text-[1.6rem] w-[50rem] text-secondaryTextColor"
+              class="form-control px-[2.4rem] py-[1.8rem] rounded-[.6rem] border border-secondaryTextColor text-[1.6rem] w-[50rem] text-secondaryTextColor"
               placeholder="Enter you e-mail here"
             />
             <button
               type="button"
-              class="bg-primaryOrange rounded-[0.6rem] text-white py-[1.2rem] px-[4.8rem] text-[1.8rem] font-bold whitespace-nowrap"
+              class="bg-primaryOrange rounded-[0.6rem] text-white py-[1.2rem] px-[4.8rem] text-[1.8rem] font-bold whitespace-nowrap shadow-md"
             >
               Get Early Access
             </button>
           </div>
         </section>
         <!-- Video section -->
-        <section class="flex justify-center gap-[8rem] py-4">
-          <div>
-            <div class="text-[4rem] text-primaryTextColor font-bold">
-              Still using multiple apps for managing your work?
+        <section class="px-[12rem] pb-[10rem]">
+          <div class="flex justify-center gap-[8rem] max-w-[128rem] m-auto">
+            <div>
+              <div class="text-[4rem] text-primaryTextColor font-bold">
+                Still using multiple apps for managing your work?
+              </div>
+              <div class="text-[1.7rem] text-secondaryTextColor mt-[3.5rem]">
+                Duh! It’s 2023 already! When you can have a single app for all
+                your task then why waste time in clicking, clicking and more
+                clicking? We believed everyone deserve something better and so
+                SLAM!
+              </div>
             </div>
-            <div class="text-[1.7rem] text-secondaryTextColor mt-[3.5rem]">
-              Duh! It’s 2023 already! When you can have a single app for all
-              your task then why waste time in clicking, clicking and more
-              clicking? We believed everyone deserve something better and so
-              SLAM!
-            </div>
+            <div
+              class="h-[33rem] min-w-[48rem] rounded-xl bg-blueTint shadow-md"
+            ></div>
           </div>
-          <div
-            class="h-[33rem] min-w-[48rem] rounded-xl bg-blueTint shadow-md"
-          ></div>
         </section>
         <!-- Features -->
-        <section></section>
+        <section class="px-[12rem] pb-[10rem]">
+          <div class="max-w-[128rem] m-auto">
+            <div class="text-[4rem] text-primaryTextColor font-bold">
+              Features
+            </div>
+            <div class="text-[1.7rem] text-secondaryTextColor mt-[1rem]">
+              All you need to get organized
+            </div>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="pills-calendar-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-calendar"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-calendar"
+                  aria-selected="true"
+                >
+                  Calendar
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-pipeline-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-pipeline"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-pipeline"
+                  aria-selected="false"
+                >
+                  Pipeline
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-customer-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-customer"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-customer"
+                  aria-selected="false"
+                >
+                  Customer Onboarding
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-projects-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-projects"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-projects"
+                  aria-selected="false"
+                >
+                  Projects
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-client-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-client"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-client"
+                  aria-selected="false"
+                >
+                  Client Portal
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-collaboration-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-collaboration"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-collaboration"
+                  aria-selected="false"
+                >
+                  Collaboration
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-accounting-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-accounting"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-accounting"
+                  aria-selected="false"
+                >
+                  Accounting
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="pills-calendar"
+                role="tabpanel"
+                aria-labelledby="pills-calendar-tab"
+                tabindex="0"
+              >
+                Calan
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-pipeline"
+                role="tabpanel"
+                aria-labelledby="pills-pipeline-tab"
+                tabindex="0"
+              >
+                Pipe
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-customer"
+                role="tabpanel"
+                aria-labelledby="pills-customer-tab"
+                tabindex="0"
+              >
+                Cust
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-projects"
+                role="tabpanel"
+                aria-labelledby="pills-projects-tab"
+                tabindex="0"
+              >
+                Projs
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-client"
+                role="tabpanel"
+                aria-labelledby="pills-client-tab"
+                tabindex="0"
+              >
+                Clien
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-collaboration"
+                role="tabpanel"
+                aria-labelledby="pills-collaboration-tab"
+                tabindex="0"
+              >
+                Collab
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-accounting"
+                role="tabpanel"
+                aria-labelledby="pills-accounting-tab"
+                tabindex="0"
+              >
+                Acc
+              </div>
+            </div>
+          </div>
+        </section>
         <!-- Users -->
-        <section>
-          <div>
+        <section class="px-[12rem] pb-[12rem]">
+          <div class="max-w-[128rem] m-auto">
             <div class="text-[4rem] text-primaryTextColor font-bold">
               Who it is meant for You ask?
             </div>
-            <div class="text-[1.7rem] text-secondaryTextColor mt-[3.5rem]">
+            <div class="text-[1.7rem] text-secondaryTextColor mt-[1rem]">
               We have designed Slam in a way so that it fits just perfectly in
               the workflow of any industry, if you are a single person or a team
               of 10, doesn't matter. With our minimalist approach anyone and
               everyone can use it at its full potential
             </div>
-          </div>
-          <div class="flex justify-center flex-wrap gap-4 mt-16">
-            <div
-              class="p-6 shadow-md rounded-3xl flex flex-col items-center justify-between bg-white min-w-[22rem]"
-            >
-              <img
-                src="./src/assets/freelancerIllustration.png"
-                alt="freelancer"
-              />
-              <p class="mt-2 font-bold text-[2.4rem] text-primaryTextColor">
-                Freelancers
-              </p>
-            </div>
-            <div
-              class="p-6 shadow-md rounded-3xl flex flex-col items-center justify-between bg-white min-w-[22rem]"
-            >
-              <img
-                src="./src/assets/solopreneursIllustration.png"
-                alt="freelancer"
-              />
-              <p class="mt-2 font-bold text-[2.4rem] text-primaryTextColor">
-                Solopreneurs
-              </p>
-            </div>
-            <div
-              class="p-6 shadow-md rounded-3xl flex flex-col items-center justify-between bg-white min-w-[22rem]"
-            >
-              <img
-                src="./src/assets/agenciesIllustration.png"
-                alt="freelancer"
-              />
-              <p class="mt-2 font-bold text-[2.4rem] text-primaryTextColor">
-                Creative Agencies
-              </p>
-            </div>
-            <div
-              class="p-6 shadow-md rounded-3xl flex flex-col items-center justify-between bg-white min-w-[22rem]"
-            >
-              <img
-                src="./src/assets/businessIllustration.png"
-                alt="freelancer"
-              />
-              <p class="mt-2 font-bold text-[2.4rem] text-primaryTextColor">
-                Small Businesses
-              </p>
+            <div class="flex justify-center flex-wrap gap-[2.4rem] mt-[6rem]">
+              <div
+                class="p-[2.4rem] shadow-md rounded-[2.4rem] flex flex-col items-center justify-between bg-white min-w-[24rem]"
+              >
+                <img src="./src/assets/freelancerImg.svg" alt="freelancer" />
+                <p
+                  class="mt-[.8rem] font-bold text-[2.4rem] text-primaryTextColor"
+                >
+                  Freelancers
+                </p>
+              </div>
+              <div
+                class="p-[2.4rem] shadow-md rounded-[2.4rem] flex flex-col items-center justify-between bg-white min-w-[24rem]"
+              >
+                <img src="./src/assets/solopreneurImg.svg" alt="freelancer" />
+                <p
+                  class="mt-[.8rem] font-bold text-[2.4rem] text-primaryTextColor"
+                >
+                  Solopreneurs
+                </p>
+              </div>
+              <div
+                class="p-[2.4rem] shadow-md rounded-[2.4rem] flex flex-col items-center justify-between bg-white min-w-[24rem]"
+              >
+                <img src="./src/assets/agenciesImg.svg" alt="freelancer" />
+                <p
+                  class="mt-[.8rem] font-bold text-[2.4rem] text-primaryTextColor"
+                >
+                  Creative Agencies
+                </p>
+              </div>
+              <div
+                class="p-[2.4rem] shadow-md rounded-[2.4rem] flex flex-col items-center justify-between bg-white min-w-[24rem]"
+              >
+                <img src="./src/assets/businessImg.svg" alt="freelancer" />
+                <p
+                  class="mt-[.8rem] font-bold text-[2.4rem] text-primaryTextColor"
+                >
+                  Small Businesses
+                </p>
+              </div>
             </div>
           </div>
         </section>
         <!-- Workflow -->
-        <section>
-          <div>
+        <section class="px-[12rem]">
+          <div class="max-w-[128rem] m-auto">
             <div class="text-[4rem] text-primaryTextColor font-bold">
               Workflow
             </div>
-            <div class="text-[1.7rem] text-secondaryTextColor mt-[3.5rem]">
+            <div class="text-[1.7rem] text-secondaryTextColor mt-[1rem]">
               To make it convenient for both the ends (Vendor and Client) Slam
               covers a smooth trajectory from connecting with prospects,
               converting them to finally handing over their projects. It’s
               simple, It’s fun
             </div>
+            <img
+              src="./src//assets/workflowImg.svg"
+              alt="workflow"
+              class="mt-[5rem] mx-auto"
+            />
           </div>
-          <img
-            src="./src//assets/workflowImg.png"
-            alt="workflow"
-            class="mt-10"
-          />
         </section>
         <!-- Integrations -->
-        <section class="rounded-[4.8rem] bg-blueTint p-8 text-center">
-          <div>
+        <section class="px-[12rem] pb-[14rem]">
+          <div
+            class="rounded-[4.8rem] bg-blueTint py-[3rem] px-[8.5rem] text-center max-w-[128rem] m-auto"
+          >
             <div class="text-[4rem] text-primaryTextColor font-bold">
               Integrations
             </div>
-            <div class="text-[1.7rem] text-secondaryTextColor mt-4">
+            <div class="text-[1.7rem] text-secondaryTextColor mt-[.5rem]">
               Integrate with multiple apps to make work easier
             </div>
-          </div>
-          <div class="flex justify-center flex-wrap gap-8 mt-16">
-            <div
-              class="p-4 shadow-md rounded-xl flex items-center justify-center bg-white min-w-[12rem]"
-            >
-              <img src="./src/assets/googleDriveLogo.png" alt="google drive" />
+            <div class="flex justify-center flex-wrap gap-[3.2rem] mt-[2.4rem]">
+              <div
+                class="p-[1.6rem] shadow-md rounded-xl flex items-center justify-center bg-white min-w-[12rem]"
+              >
+                <img
+                  src="./src/assets/googleDriveLogo.svg"
+                  alt="google drive"
+                />
+              </div>
+              <div
+                class="p-[1.6rem] shadow-md rounded-xl flex items-center justify-center bg-white min-w-[12rem]"
+              >
+                <img src="./src/assets/asanaLogo.svg" alt="asana" />
+              </div>
+              <div
+                class="p-[1.6rem] shadow-md rounded-xl flex items-center justify-center bg-white min-w-[12rem]"
+              >
+                <img
+                  src="./src/assets/googleCalendarLogo.svg"
+                  alt="google calendar"
+                />
+              </div>
+              <div
+                class="p-[1.6rem] shadow-md rounded-xl flex items-center justify-center bg-white min-w-[12rem]"
+              >
+                <img src="./src/assets/dropboxLogo.svg" alt="dropbox" />
+              </div>
+              <div
+                class="p-[1.6rem] shadow-md rounded-xl flex items-center justify-center bg-white min-w-[12rem]"
+              >
+                <img src="./src/assets/slackLogo.svg" alt="slack" />
+              </div>
+              <div
+                class="p-[1.6rem] shadow-md rounded-xl flex items-center justify-center bg-white min-w-[12rem]"
+              >
+                <img src="./src/assets/zapierLogo.svg" alt="zapier" />
+              </div>
+              <div
+                class="p-[1.6rem] shadow-md rounded-xl flex items-center justify-center bg-white min-w-[12rem]"
+              >
+                <img src="./src/assets/quickbooksLogo.svg" alt="quickbooks" />
+              </div>
             </div>
-            <div
-              class="p-4 shadow-md rounded-xl flex items-center justify-center bg-white min-w-[12rem]"
-            >
-              <img src="./src/assets/asanaLogo.png" alt="asana" />
+            <div class="text-[1.7rem] text-secondaryTextColor mt-[4rem]">
+              ....and more coming soon
             </div>
-            <div
-              class="p-4 shadow-md rounded-xl flex items-center justify-center bg-white min-w-[12rem]"
-            >
-              <img
-                src="./src/assets/googleCalendarLogo.png"
-                alt="google calendar"
-              />
-            </div>
-            <div
-              class="p-4 shadow-md rounded-xl flex items-center justify-center bg-white min-w-[12rem]"
-            >
-              <img src="./src/assets/dropboxLogo.png" alt="dropbox" />
-            </div>
-            <div
-              class="p-4 shadow-md rounded-xl flex items-center justify-center bg-white min-w-[12rem]"
-            >
-              <img src="./src/assets/slackLogo.png" alt="slack" />
-            </div>
-            <div
-              class="p-4 shadow-md rounded-xl flex items-center justify-center bg-white min-w-[12rem]"
-            >
-              <img src="./src/assets/zapierLogo.png" alt="zapier" />
-            </div>
-            <div
-              class="p-4 shadow-md rounded-xl flex items-center justify-center bg-white min-w-[12rem]"
-            >
-              <img src="./src/assets/quickbooksLogo.png" alt="quickbooks" />
-            </div>
-          </div>
-          <div class="text-[1.7rem] text-secondaryTextColor mt-4">
-            ....and more coming soon
           </div>
         </section>
         <!-- Advantages -->
-        <section></section>
+        <section class="px-[12rem] pt-[8rem] pb-[14rem] bg-orangeTint">
+          <div class="text-center max-w-[128rem] m-auto">
+            <div class="text-[4rem] text-primaryTextColor font-bold">
+              What’s so great about it anyway?
+            </div>
+            <div class="text-[2.4rem] text-secondaryTextColor mt-[1.1rem]">
+              Let’s see what good we are offering to our amazing users.
+            </div>
+            <div class="mt-[9rem] d-flex flex-wrap gap-[9rem] justify-center">
+              <div
+                class="w-[55rem] px-[4.8rem] py-[2.4rem] rounded-xl shadow-md bg-white border-l-[1.4rem] border-primaryBlue"
+              >
+                <div
+                  class="text-[3.2rem] text-primaryTextColor font-bold leading-[3.8rem]"
+                >
+                  Simple yet Effective
+                </div>
+                <div
+                  class="text-[1.6rem] text-secondaryTextColor mt-4 leading-[1.9rem]"
+                >
+                  The platform has been designed with minimalist approach and
+                  super performing design. Everything you need is just right
+                  there in front of you.
+                </div>
+              </div>
+              <div
+                class="w-[55rem] px-[4.8rem] py-[2.4rem] rounded-xl shadow-md bg-white border-l-[1.4rem] border-primaryOrange"
+              >
+                <div
+                  class="text-[3.2rem] text-primaryTextColor font-bold leading-[3.8rem]"
+                >
+                  Flexible
+                </div>
+                <div
+                  class="text-[1.6rem] text-secondaryTextColor mt-4 leading-[1.9rem]"
+                >
+                  Select and use only specific modules which you need based on
+                  your work, roles and industry
+                </div>
+              </div>
+              <div
+                class="w-[55rem] px-[4.8rem] py-[2.4rem] rounded-xl shadow-md bg-white border-l-[1.4rem] border-[#55DEFF]"
+              >
+                <div
+                  class="text-[3.2rem] text-primaryTextColor font-bold leading-[3.8rem]"
+                >
+                  Control
+                </div>
+                <div
+                  class="text-[1.6rem] text-secondaryTextColor mt-4 leading-[1.9rem]"
+                >
+                  With availability of separate User and Client portal, the user
+                  gets lot of control over the data sharing and security,
+                  whereas the client receives a full transparency.
+                </div>
+              </div>
+              <div
+                class="w-[55rem] px-[4.8rem] py-[2.4rem] rounded-xl shadow-md bg-white border-l-[1.4rem] border-[#54D14D]"
+              >
+                <div
+                  class="text-[3.2rem] text-primaryTextColor font-bold leading-[3.8rem]"
+                >
+                  Adaptive
+                </div>
+                <div
+                  class="text-[1.6rem] text-secondaryTextColor mt-4 leading-[1.9rem]"
+                >
+                  New Platform comes with new challenges, but with the ease of
+                  integration it becomes so easy and quick to adapt the unique
+                  tools and features of the platform.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <!-- FAQs -->
-        <section></section>
+        <section class="px-[12rem]"></section>
         <!-- Footer -->
-        <section></section>
+        <section class="px-[12rem] pt-[25rem] pb-[4.5rem] bg-primaryBlue">
+          <div class="max-w-[128rem] m-auto">
+            <div class="flex justify-center gap-[4rem]">
+              <img
+                src="./src/assets/linkedinLogo.svg"
+                alt="linkedin"
+                role="button"
+              />
+              <img
+                src="./src/assets/instagramLogo.svg"
+                alt="instagram"
+                role="button"
+              />
+              <img
+                src="./src/assets/facebookLogo.svg"
+                alt="facebook"
+                role="button"
+              />
+            </div>
+            <div class="border-[.3rem] border-white rounded mt-[3.7rem]"></div>
+            <div
+              class="mt-[3.2rem] flex justify-center items-center gap-[1.2rem]"
+            >
+              <img src="./src/assets/slamLogoWhite.svg" alt="slam logo" />
+              <span class="text-[1.4rem] text-white">All Rights Reserved</span>
+              <img
+                src="./src/assets/copyrightIcon.svg"
+                alt="copyright"
+                class="mb-[.4px]"
+              />
+              <span class="text-[1.4rem] text-white">2023</span>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
     <script
