@@ -18,11 +18,26 @@
       crossorigin="anonymous"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script
+    <script id="mcjs">
+      function showPopup() {
+        !(function (c, h, i, m, p) {
+          (m = c.createElement(h)),
+            (p = c.getElementsByTagName(h)[0]),
+            (m.async = 1),
+            (m.src = i),
+            p.parentNode.insertBefore(m, p);
+        })(
+          document,
+          "script",
+          "https://chimpstatic.com/mcjs-connected/js/users/d1e8df275b56a19336b30543d/91bc149acb072c8b5e69b7dea.js"
+        );
+      }
+    </script>
+    <!-- <script
       id="pixel-script-poptin"
       src="https://cdn.popt.in/pixel.js?id=60de6f644d91f"
       async="true"
-    ></script>
+    ></script> -->
     <script>
       tailwind.config = {
         theme: {
@@ -34,7 +49,7 @@
               primaryTextColor: "#030E1F",
               secondaryTextColor: "#898989",
               blueTint: "rgba(90, 116, 155, 0.1);",
-              orangeTint: "rgba(251, 134, 11, 0.1);",
+              orangeTint: "rgba(251, 134, 11, 0.2);",
             },
           },
         },
@@ -45,21 +60,23 @@
     <div class="bg-primaryBackground">
       <!-- Header -->
       <header
-        class="px-[12rem] py-[1rem] m-auto sticky top-0 z-20 backdrop-blur-xl shadow-sm"
+        class="px-[12rem] py-[.5rem] m-auto sticky top-0 z-20 backdrop-blur-xl shadow-md"
       >
         <div class="flex justify-between items-center max-w-[128rem] m-auto">
           <img src="./src/assets/slamLogoBlue.svg" alt="slam logo" />
-          <button
-            type="button"
-            class="bg-primaryOrange hover:bg-orange-600 transition rounded-[0.6rem] text-white py-[1.2rem] px-[4.8rem] text-[1.8rem] font-bold shadow-sm"
+          <a href="#" onclick="showPopup()">
+            <button
+              type="button"
+              class="bg-primaryOrange hover:bg-orange-600 transition rounded-[0.6rem] text-white py-[1.2rem] px-[4.8rem] text-[1.8rem] font-bold shadow-sm"
+            >
+              Get Early Access
+            </button></a
           >
-            Get Early Access
-          </button>
         </div>
       </header>
       <main>
         <!-- Banner -->
-        <section class="px-[12rem] pt-[15rem] pb-[20rem]">
+        <section class="px-[12rem] pt-[13rem] pb-[20rem]">
           <div
             class="flex flex-col items-center max-w-[128rem] m-auto relative"
           >
@@ -81,17 +98,10 @@
             >
               One window for complete project management work
             </div>
-            <div
-              class="flex flex-wrap justify-center gap-x-[.6rem] gap-y-[1rem] mt-[7.8rem] z-10"
-            >
-              <input
-                type="text"
-                class="form-control px-[2.4rem] py-[1.8rem] rounded-[.6rem] border border-secondaryTextColor text-[1.6rem] w-[50rem] text-secondaryTextColor"
-                placeholder="Enter you e-mail here"
-              />
+            <div class="flex justify-center mt-[7rem] z-10">
               <button
                 type="button"
-                class="bg-primaryOrange hover:bg-orange-600 transition rounded-[0.6rem] text-white py-[1.2rem] px-[4.8rem] text-[1.8rem] font-bold whitespace-nowrap shadow-md"
+                class="bg-primaryOrange hover:bg-orange-600 transition rounded-[0.6rem] text-white py-[1.2rem] px-[4.8rem] text-[1.8rem] font-bold whitespace-nowrap shadow"
               >
                 Get Early Access
               </button>
@@ -128,22 +138,13 @@
                 everyone deserve something better and so SLAM!
               </div>
             </div>
-            <div
-              class="h-[33rem] min-w-[48rem] rounded-xl bg-blueTint shadow-md flex"
+            <video
+              src="./src/assets/Slam video.mp4"
+              class="h-fit min-w-[48rem] rounded-xl shadow"
+              controls
             >
-              <!-- <iframe
-                width="96%"
-                height="96%"
-                class="m-auto rounded-xl"
-                src="https://www.youtube.com/embed/S5WN4gWVqWg?autoplay=1"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe> -->
-              <video src="./src/assets/Slam video.mp4" controls>
-                not supported
-              </video>
-            </div>
+              not supported
+            </video>
           </div>
         </section>
         <!-- Features -->
@@ -263,7 +264,7 @@
             </ul>
 
             <div
-              class="rounded-[4.8rem] bg-blueTint py-[8.7rem] ps-[8.4rem] pe-[7rem] max-w-[128rem] m-auto"
+              class="rounded-[4.8rem] bg-blueTint py-[7rem] ps-[8.4rem] pe-[7rem] max-w-[128rem] m-auto shadow-md"
             >
               <div class="tab-content" id="pills-tabContent">
                 <div
@@ -274,40 +275,18 @@
                   tabindex="0"
                 >
                   <div class="flex gap-[1.2rem]">
-                    <div class="flex flex-col justify-between">
-                      <div>
-                        <div
-                          class="text-[4rem] text-primaryTextColor font-bold"
-                        >
-                          Calendar
-                        </div>
-                        <div
-                          class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em]"
-                        >
-                          Lorem ipsum dolor sit amet consectetur. Ut
-                          sollicitudin scelerisque massa id nunc condimentum
-                          massa nec nec. Sed gravida mattis ornare nisi risus
-                          penatibus at. Nulla egestas potenti eget netus tortor
-                          arcu erat sed maecenas.
-                        </div>
+                    <div>
+                      <div class="text-[4rem] text-primaryTextColor font-bold">
+                        Calendar
                       </div>
                       <div
-                        class="trynow-button text-[1.6rem] text-primaryOrange font-bold p-[1.4rem] w-fit rounded-[.6rem] hover:bg-primaryOrange hover:text-white transition flex items-center gap-[.8rem]"
-                        role="button"
+                        class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em]"
                       >
-                        <span>Try Now</span>
-                        <svg
-                          width="32"
-                          height="32"
-                          viewBox="0 0 32 32"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99999 17.3333V14.6666H18.6667L14 9.99996L15.8933 8.10663L23.7867 16L15.8933 23.8933L14 22L18.6667 17.3333H7.99999ZM29.3333 16C29.3333 19.5362 27.9286 22.9276 25.4281 25.428C22.9276 27.9285 19.5362 29.3333 16 29.3333C14.249 29.3333 12.5152 28.9884 10.8975 28.3184C9.27987 27.6483 7.81001 26.6662 6.5719 25.428C4.07141 22.9276 2.66666 19.5362 2.66666 16C2.66666 12.4637 4.07141 9.07235 6.5719 6.57187C9.07238 4.07138 12.4638 2.66663 16 2.66663C17.7509 2.66663 19.4848 3.0115 21.1024 3.68157C22.7201 4.35163 24.19 5.33375 25.4281 6.57187C26.6662 7.80998 27.6483 9.27984 28.3184 10.8975C28.9884 12.5152 29.3333 14.249 29.3333 16ZM26.6667 16C26.6667 13.171 25.5428 10.4579 23.5425 8.45749C21.5421 6.4571 18.829 5.33329 16 5.33329C13.171 5.33329 10.4579 6.4571 8.45752 8.45749C6.45713 10.4579 5.33332 13.171 5.33332 16C5.33332 18.8289 6.45713 21.542 8.45752 23.5424C10.4579 25.5428 13.171 26.6666 16 26.6666C18.829 26.6666 21.5421 25.5428 23.5425 23.5424C25.5428 21.542 26.6667 18.8289 26.6667 16Z"
-                            fill="#FB860B"
-                          />
-                        </svg>
+                        Streamline your workflow and save time by managing all
+                        your tasks and appointments in one central location.
+                        Plus, with real-time updates and notifications, you'll
+                        always be in the loop, ensuring that you can stay ahead
+                        of your schedule and make the most of your day.
                       </div>
                     </div>
                     <img src="./src/assets/calendarImg.svg" alt="calendar" />
@@ -321,43 +300,22 @@
                   tabindex="0"
                 >
                   <div class="flex gap-[1.2rem]">
-                    <div class="flex flex-col justify-between">
-                      <div>
-                        <div
-                          class="text-[4rem] text-primaryTextColor font-bold"
-                        >
-                          Pipeline
-                        </div>
-                        <div
-                          class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em]"
-                        >
-                          Lorem ipsum dolor sit amet consectetur. Ut
-                          sollicitudin scelerisque massa id nunc condimentum
-                          massa nec nec. Sed gravida mattis ornare nisi risus
-                          penatibus at. Nulla egestas potenti eget netus tortor
-                          arcu erat sed maecenas.
-                        </div>
+                    <div>
+                      <div class="text-[4rem] text-primaryTextColor font-bold">
+                        Pipeline
                       </div>
                       <div
-                        class="trynow-button text-[1.6rem] text-primaryOrange font-bold p-[1.4rem] w-fit rounded-[.6rem] hover:bg-primaryOrange hover:text-white transition flex items-center gap-[.8rem]"
-                        role="button"
+                        class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em]"
                       >
-                        <span>Try Now</span>
-                        <svg
-                          width="32"
-                          height="32"
-                          viewBox="0 0 32 32"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99999 17.3333V14.6666H18.6667L14 9.99996L15.8933 8.10663L23.7867 16L15.8933 23.8933L14 22L18.6667 17.3333H7.99999ZM29.3333 16C29.3333 19.5362 27.9286 22.9276 25.4281 25.428C22.9276 27.9285 19.5362 29.3333 16 29.3333C14.249 29.3333 12.5152 28.9884 10.8975 28.3184C9.27987 27.6483 7.81001 26.6662 6.5719 25.428C4.07141 22.9276 2.66666 19.5362 2.66666 16C2.66666 12.4637 4.07141 9.07235 6.5719 6.57187C9.07238 4.07138 12.4638 2.66663 16 2.66663C17.7509 2.66663 19.4848 3.0115 21.1024 3.68157C22.7201 4.35163 24.19 5.33375 25.4281 6.57187C26.6662 7.80998 27.6483 9.27984 28.3184 10.8975C28.9884 12.5152 29.3333 14.249 29.3333 16ZM26.6667 16C26.6667 13.171 25.5428 10.4579 23.5425 8.45749C21.5421 6.4571 18.829 5.33329 16 5.33329C13.171 5.33329 10.4579 6.4571 8.45752 8.45749C6.45713 10.4579 5.33332 13.171 5.33332 16C5.33332 18.8289 6.45713 21.542 8.45752 23.5424C10.4579 25.5428 13.171 26.6666 16 26.6666C18.829 26.6666 21.5421 25.5428 23.5425 23.5424C25.5428 21.542 26.6667 18.8289 26.6667 16Z"
-                            fill="#FB860B"
-                          />
-                        </svg>
+                        This module is specifically designed for customer
+                        relationship management (CRM) and provides an intuitive
+                        interface for managing your leads and sales pipeline.
+                        You can easily add new leads, track their progress
+                        through the sales cycle, and manage your interactions
+                        with them.
                       </div>
                     </div>
-                    <img src="./src/assets/calendarImg.svg" alt="calendar" />
+                    <img src="./src/assets/pipelineImg.svg" alt="pipeline" />
                   </div>
                 </div>
                 <div
@@ -368,43 +326,25 @@
                   tabindex="0"
                 >
                   <div class="flex gap-[1.2rem]">
-                    <div class="flex flex-col justify-between">
-                      <div>
-                        <div
-                          class="text-[4rem] text-primaryTextColor font-bold"
-                        >
-                          Customer Onboarding
-                        </div>
-                        <div
-                          class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em]"
-                        >
-                          Lorem ipsum dolor sit amet consectetur. Ut
-                          sollicitudin scelerisque massa id nunc condimentum
-                          massa nec nec. Sed gravida mattis ornare nisi risus
-                          penatibus at. Nulla egestas potenti eget netus tortor
-                          arcu erat sed maecenas.
-                        </div>
+                    <div>
+                      <div class="text-[4rem] text-primaryTextColor font-bold">
+                        Customer Onboarding
                       </div>
                       <div
-                        class="trynow-button text-[1.6rem] text-primaryOrange font-bold p-[1.4rem] w-fit rounded-[.6rem] hover:bg-primaryOrange hover:text-white transition flex items-center gap-[.8rem]"
-                        role="button"
+                        class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em]"
                       >
-                        <span>Try Now</span>
-                        <svg
-                          width="32"
-                          height="32"
-                          viewBox="0 0 32 32"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99999 17.3333V14.6666H18.6667L14 9.99996L15.8933 8.10663L23.7867 16L15.8933 23.8933L14 22L18.6667 17.3333H7.99999ZM29.3333 16C29.3333 19.5362 27.9286 22.9276 25.4281 25.428C22.9276 27.9285 19.5362 29.3333 16 29.3333C14.249 29.3333 12.5152 28.9884 10.8975 28.3184C9.27987 27.6483 7.81001 26.6662 6.5719 25.428C4.07141 22.9276 2.66666 19.5362 2.66666 16C2.66666 12.4637 4.07141 9.07235 6.5719 6.57187C9.07238 4.07138 12.4638 2.66663 16 2.66663C17.7509 2.66663 19.4848 3.0115 21.1024 3.68157C22.7201 4.35163 24.19 5.33375 25.4281 6.57187C26.6662 7.80998 27.6483 9.27984 28.3184 10.8975C28.9884 12.5152 29.3333 14.249 29.3333 16ZM26.6667 16C26.6667 13.171 25.5428 10.4579 23.5425 8.45749C21.5421 6.4571 18.829 5.33329 16 5.33329C13.171 5.33329 10.4579 6.4571 8.45752 8.45749C6.45713 10.4579 5.33332 13.171 5.33332 16C5.33332 18.8289 6.45713 21.542 8.45752 23.5424C10.4579 25.5428 13.171 26.6666 16 26.6666C18.829 26.6666 21.5421 25.5428 23.5425 23.5424C25.5428 21.542 26.6667 18.8289 26.6667 16Z"
-                            fill="#FB860B"
-                          />
-                        </svg>
+                        A crucial feature of our platform that enables you to
+                        streamline your onboarding process and provide a better
+                        customer experience. With this module, you can easily
+                        manage your customer onboarding tasks, track customer
+                        progress, and ensure that your team is always on the
+                        same page.
                       </div>
                     </div>
-                    <img src="./src/assets/calendarImg.svg" alt="calendar" />
+                    <img
+                      src="./src/assets/customerOnboardingImg.svg"
+                      alt="customer onboarding"
+                    />
                   </div>
                 </div>
                 <div
@@ -415,43 +355,21 @@
                   tabindex="0"
                 >
                   <div class="flex gap-[1.2rem]">
-                    <div class="flex flex-col justify-between">
-                      <div>
-                        <div
-                          class="text-[4rem] text-primaryTextColor font-bold"
-                        >
-                          Projects
-                        </div>
-                        <div
-                          class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em]"
-                        >
-                          Lorem ipsum dolor sit amet consectetur. Ut
-                          sollicitudin scelerisque massa id nunc condimentum
-                          massa nec nec. Sed gravida mattis ornare nisi risus
-                          penatibus at. Nulla egestas potenti eget netus tortor
-                          arcu erat sed maecenas.
-                        </div>
+                    <div>
+                      <div class="text-[4rem] text-primaryTextColor font-bold">
+                        Projects
                       </div>
                       <div
-                        class="trynow-button text-[1.6rem] text-primaryOrange font-bold p-[1.4rem] w-fit rounded-[.6rem] hover:bg-primaryOrange hover:text-white transition flex items-center gap-[.8rem]"
-                        role="button"
+                        class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em]"
                       >
-                        <span>Try Now</span>
-                        <svg
-                          width="32"
-                          height="32"
-                          viewBox="0 0 32 32"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99999 17.3333V14.6666H18.6667L14 9.99996L15.8933 8.10663L23.7867 16L15.8933 23.8933L14 22L18.6667 17.3333H7.99999ZM29.3333 16C29.3333 19.5362 27.9286 22.9276 25.4281 25.428C22.9276 27.9285 19.5362 29.3333 16 29.3333C14.249 29.3333 12.5152 28.9884 10.8975 28.3184C9.27987 27.6483 7.81001 26.6662 6.5719 25.428C4.07141 22.9276 2.66666 19.5362 2.66666 16C2.66666 12.4637 4.07141 9.07235 6.5719 6.57187C9.07238 4.07138 12.4638 2.66663 16 2.66663C17.7509 2.66663 19.4848 3.0115 21.1024 3.68157C22.7201 4.35163 24.19 5.33375 25.4281 6.57187C26.6662 7.80998 27.6483 9.27984 28.3184 10.8975C28.9884 12.5152 29.3333 14.249 29.3333 16ZM26.6667 16C26.6667 13.171 25.5428 10.4579 23.5425 8.45749C21.5421 6.4571 18.829 5.33329 16 5.33329C13.171 5.33329 10.4579 6.4571 8.45752 8.45749C6.45713 10.4579 5.33332 13.171 5.33332 16C5.33332 18.8289 6.45713 21.542 8.45752 23.5424C10.4579 25.5428 13.171 26.6666 16 26.6666C18.829 26.6666 21.5421 25.5428 23.5425 23.5424C25.5428 21.542 26.6667 18.8289 26.6667 16Z"
-                            fill="#FB860B"
-                          />
-                        </svg>
+                        An all-in-one solution for managing your projects,
+                        collaborating with team members, and coordinating with
+                        clients. With this module, you can easily create
+                        dedicated projects for each client, manage tasks and
+                        deadlines, and track progress in real-time.
                       </div>
                     </div>
-                    <img src="./src/assets/calendarImg.svg" alt="calendar" />
+                    <img src="./src/assets/projectsImg.svg" alt="projects" />
                   </div>
                 </div>
                 <div
@@ -462,43 +380,25 @@
                   tabindex="0"
                 >
                   <div class="flex gap-[1.2rem]">
-                    <div class="flex flex-col justify-between">
-                      <div>
-                        <div
-                          class="text-[4rem] text-primaryTextColor font-bold"
-                        >
-                          Client Portal
-                        </div>
-                        <div
-                          class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em]"
-                        >
-                          Lorem ipsum dolor sit amet consectetur. Ut
-                          sollicitudin scelerisque massa id nunc condimentum
-                          massa nec nec. Sed gravida mattis ornare nisi risus
-                          penatibus at. Nulla egestas potenti eget netus tortor
-                          arcu erat sed maecenas.
-                        </div>
+                    <div>
+                      <div class="text-[4rem] text-primaryTextColor font-bold">
+                        Client Portal
                       </div>
                       <div
-                        class="trynow-button text-[1.6rem] text-primaryOrange font-bold p-[1.4rem] w-fit rounded-[.6rem] hover:bg-primaryOrange hover:text-white transition flex items-center gap-[.8rem]"
-                        role="button"
+                        class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em]"
                       >
-                        <span>Try Now</span>
-                        <svg
-                          width="32"
-                          height="32"
-                          viewBox="0 0 32 32"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99999 17.3333V14.6666H18.6667L14 9.99996L15.8933 8.10663L23.7867 16L15.8933 23.8933L14 22L18.6667 17.3333H7.99999ZM29.3333 16C29.3333 19.5362 27.9286 22.9276 25.4281 25.428C22.9276 27.9285 19.5362 29.3333 16 29.3333C14.249 29.3333 12.5152 28.9884 10.8975 28.3184C9.27987 27.6483 7.81001 26.6662 6.5719 25.428C4.07141 22.9276 2.66666 19.5362 2.66666 16C2.66666 12.4637 4.07141 9.07235 6.5719 6.57187C9.07238 4.07138 12.4638 2.66663 16 2.66663C17.7509 2.66663 19.4848 3.0115 21.1024 3.68157C22.7201 4.35163 24.19 5.33375 25.4281 6.57187C26.6662 7.80998 27.6483 9.27984 28.3184 10.8975C28.9884 12.5152 29.3333 14.249 29.3333 16ZM26.6667 16C26.6667 13.171 25.5428 10.4579 23.5425 8.45749C21.5421 6.4571 18.829 5.33329 16 5.33329C13.171 5.33329 10.4579 6.4571 8.45752 8.45749C6.45713 10.4579 5.33332 13.171 5.33332 16C5.33332 18.8289 6.45713 21.542 8.45752 23.5424C10.4579 25.5428 13.171 26.6666 16 26.6666C18.829 26.6666 21.5421 25.5428 23.5425 23.5424C25.5428 21.542 26.6667 18.8289 26.6667 16Z"
-                            fill="#FB860B"
-                          />
-                        </svg>
+                        An integral part of our Projects module, providing our
+                        clients with full transparency and visibility into the
+                        progress of their projects. With the Client Portal,
+                        clients can access real-time updates, collaborate with
+                        our team, and have complete control over their project
+                        engagement.
                       </div>
                     </div>
-                    <img src="./src/assets/calendarImg.svg" alt="calendar" />
+                    <img
+                      src="./src/assets/clientPortalImg.svg"
+                      alt="client portal"
+                    />
                   </div>
                 </div>
                 <div
@@ -509,43 +409,26 @@
                   tabindex="0"
                 >
                   <div class="flex gap-[1.2rem]">
-                    <div class="flex flex-col justify-between">
-                      <div>
-                        <div
-                          class="text-[4rem] text-primaryTextColor font-bold"
-                        >
-                          Collaboration
-                        </div>
-                        <div
-                          class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em]"
-                        >
-                          Lorem ipsum dolor sit amet consectetur. Ut
-                          sollicitudin scelerisque massa id nunc condimentum
-                          massa nec nec. Sed gravida mattis ornare nisi risus
-                          penatibus at. Nulla egestas potenti eget netus tortor
-                          arcu erat sed maecenas.
-                        </div>
+                    <div>
+                      <div class="text-[4rem] text-primaryTextColor font-bold">
+                        Collaboration
                       </div>
                       <div
-                        class="trynow-button text-[1.6rem] text-primaryOrange font-bold p-[1.4rem] w-fit rounded-[.6rem] hover:bg-primaryOrange hover:text-white transition flex items-center gap-[.8rem]"
-                        role="button"
+                        class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em]"
                       >
-                        <span>Try Now</span>
-                        <svg
-                          width="32"
-                          height="32"
-                          viewBox="0 0 32 32"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99999 17.3333V14.6666H18.6667L14 9.99996L15.8933 8.10663L23.7867 16L15.8933 23.8933L14 22L18.6667 17.3333H7.99999ZM29.3333 16C29.3333 19.5362 27.9286 22.9276 25.4281 25.428C22.9276 27.9285 19.5362 29.3333 16 29.3333C14.249 29.3333 12.5152 28.9884 10.8975 28.3184C9.27987 27.6483 7.81001 26.6662 6.5719 25.428C4.07141 22.9276 2.66666 19.5362 2.66666 16C2.66666 12.4637 4.07141 9.07235 6.5719 6.57187C9.07238 4.07138 12.4638 2.66663 16 2.66663C17.7509 2.66663 19.4848 3.0115 21.1024 3.68157C22.7201 4.35163 24.19 5.33375 25.4281 6.57187C26.6662 7.80998 27.6483 9.27984 28.3184 10.8975C28.9884 12.5152 29.3333 14.249 29.3333 16ZM26.6667 16C26.6667 13.171 25.5428 10.4579 23.5425 8.45749C21.5421 6.4571 18.829 5.33329 16 5.33329C13.171 5.33329 10.4579 6.4571 8.45752 8.45749C6.45713 10.4579 5.33332 13.171 5.33332 16C5.33332 18.8289 6.45713 21.542 8.45752 23.5424C10.4579 25.5428 13.171 26.6666 16 26.6666C18.829 26.6666 21.5421 25.5428 23.5425 23.5424C25.5428 21.542 26.6667 18.8289 26.6667 16Z"
-                            fill="#FB860B"
-                          />
-                        </svg>
+                        The Collaboration Module revolutionizes team and client
+                        communication by providing a dedicated space for
+                        real-time collaboration and eliminating the need for
+                        lengthy email chains. With this module, team members and
+                        clients can engage in seamless, instant communication,
+                        fostering efficient collaboration and timely
+                        decision-making.
                       </div>
                     </div>
-                    <img src="./src/assets/calendarImg.svg" alt="calendar" />
+                    <img
+                      src="./src/assets/collaborationImg.svg"
+                      alt="collaboration"
+                    />
                   </div>
                 </div>
                 <div
@@ -556,43 +439,28 @@
                   tabindex="0"
                 >
                   <div class="flex gap-[1.2rem]">
-                    <div class="flex flex-col justify-between">
-                      <div>
-                        <div
-                          class="text-[4rem] text-primaryTextColor font-bold"
-                        >
-                          Accounting
-                        </div>
-                        <div
-                          class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em]"
-                        >
-                          Lorem ipsum dolor sit amet consectetur. Ut
-                          sollicitudin scelerisque massa id nunc condimentum
-                          massa nec nec. Sed gravida mattis ornare nisi risus
-                          penatibus at. Nulla egestas potenti eget netus tortor
-                          arcu erat sed maecenas.
-                        </div>
+                    <div>
+                      <div class="text-[4rem] text-primaryTextColor font-bold">
+                        Accounting
                       </div>
                       <div
-                        class="trynow-button text-[1.6rem] text-primaryOrange font-bold p-[1.4rem] w-fit rounded-[.6rem] hover:bg-primaryOrange hover:text-white transition flex items-center gap-[.8rem]"
-                        role="button"
+                        class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em]"
                       >
-                        <span>Try Now</span>
-                        <svg
-                          width="32"
-                          height="32"
-                          viewBox="0 0 32 32"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99999 17.3333V14.6666H18.6667L14 9.99996L15.8933 8.10663L23.7867 16L15.8933 23.8933L14 22L18.6667 17.3333H7.99999ZM29.3333 16C29.3333 19.5362 27.9286 22.9276 25.4281 25.428C22.9276 27.9285 19.5362 29.3333 16 29.3333C14.249 29.3333 12.5152 28.9884 10.8975 28.3184C9.27987 27.6483 7.81001 26.6662 6.5719 25.428C4.07141 22.9276 2.66666 19.5362 2.66666 16C2.66666 12.4637 4.07141 9.07235 6.5719 6.57187C9.07238 4.07138 12.4638 2.66663 16 2.66663C17.7509 2.66663 19.4848 3.0115 21.1024 3.68157C22.7201 4.35163 24.19 5.33375 25.4281 6.57187C26.6662 7.80998 27.6483 9.27984 28.3184 10.8975C28.9884 12.5152 29.3333 14.249 29.3333 16ZM26.6667 16C26.6667 13.171 25.5428 10.4579 23.5425 8.45749C21.5421 6.4571 18.829 5.33329 16 5.33329C13.171 5.33329 10.4579 6.4571 8.45752 8.45749C6.45713 10.4579 5.33332 13.171 5.33332 16C5.33332 18.8289 6.45713 21.542 8.45752 23.5424C10.4579 25.5428 13.171 26.6666 16 26.6666C18.829 26.6666 21.5421 25.5428 23.5425 23.5424C25.5428 21.542 26.6667 18.8289 26.6667 16Z"
-                            fill="#FB860B"
-                          />
-                        </svg>
+                        A comprehensive solution that empowers users to
+                        efficiently handle their financial transactions, create
+                        professional proposals and invoices, record payments,
+                        and generate real-time reports for valuable insights and
+                        metrics. It offers a user-friendly interface where you
+                        can input project details, itemize services or products,
+                        set pricing, and apply taxes or discounts. This ensures
+                        accurate and professional-looking proposals and invoices
+                        that reflect your brand.
                       </div>
                     </div>
-                    <img src="./src/assets/calendarImg.svg" alt="calendar" />
+                    <img
+                      src="./src/assets/accountingImg.svg"
+                      alt="accounting"
+                    />
                   </div>
                 </div>
               </div>
@@ -674,7 +542,7 @@
             <img
               src="./src//assets/workflowImg.svg"
               alt="workflow"
-              class="mt-[5rem] mx-auto"
+              class="mb-[4rem] mx-auto"
             />
           </div>
         </section>
@@ -738,7 +606,7 @@
           </div>
         </section>
         <!-- Advantages -->
-        <section class="px-[12rem] pt-[8rem] pb-[14rem] bg-orangeTint">
+        <section class="px-[12rem] pt-[8rem] pb-[14rem] bg-blueTint">
           <div class="text-center max-w-[128rem] m-auto">
             <div class="text-[4rem] text-primaryTextColor font-bold">
               What’s so great about it anyway?
@@ -764,7 +632,7 @@
                 </div>
               </div>
               <div
-                class="w-[55rem] px-[4.8rem] py-[2.4rem] rounded-xl shadow-md bg-white border-l-[1.4rem] border-primaryOrange text-left"
+                class="w-[55rem] px-[4.8rem] py-[2.4rem] rounded-xl shadow-md bg-white border-l-[1.4rem] border-primaryBlue text-left"
               >
                 <div
                   class="text-[3.2rem] text-primaryTextColor font-bold leading-[3.8rem]"
@@ -779,7 +647,7 @@
                 </div>
               </div>
               <div
-                class="w-[55rem] px-[4.8rem] py-[2.4rem] rounded-xl shadow-md bg-white border-l-[1.4rem] border-[#55DEFF] text-left"
+                class="w-[55rem] px-[4.8rem] py-[2.4rem] rounded-xl shadow-md bg-white border-l-[1.4rem] border-primaryBlue text-left"
               >
                 <div
                   class="text-[3.2rem] text-primaryTextColor font-bold leading-[3.8rem]"
@@ -795,7 +663,7 @@
                 </div>
               </div>
               <div
-                class="w-[55rem] px-[4.8rem] py-[2.4rem] rounded-xl shadow-md bg-white border-l-[1.4rem] border-[#54D14D] text-left"
+                class="w-[55rem] px-[4.8rem] py-[2.4rem] rounded-xl shadow-md bg-white border-l-[1.4rem] border-primaryBlue text-left"
               >
                 <div
                   class="text-[3.2rem] text-primaryTextColor font-bold leading-[3.8rem]"
@@ -893,21 +761,35 @@
         >
           <div class="max-w-[128rem] m-auto">
             <div class="flex justify-center gap-[4rem]">
-              <img
-                src="./src/assets/linkedinLogo.svg"
-                alt="linkedin"
-                role="button"
-              />
-              <img
-                src="./src/assets/instagramLogo.svg"
-                alt="instagram"
-                role="button"
-              />
-              <img
-                src="./src/assets/facebookLogo.svg"
-                alt="facebook"
-                role="button"
-              />
+              <a href="https://twitter.com/theslamapp" target="_blank">
+                <img
+                  src="./src/assets/twitterLogo.svg"
+                  alt="twitter"
+                  role="button"
+                  width="48px"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/theslamapp"
+                target="_blank"
+              >
+                <img
+                  src="./src/assets/linkedinLogo.svg"
+                  alt="linkedin"
+                  role="button"
+              /></a>
+              <a href="https://www.instagram.com/theslamapp/" target="_blank">
+                <img
+                  src="./src/assets/instagramLogo.svg"
+                  alt="instagram"
+                  role="button"
+              /></a>
+              <a href="https://www.facebook.com/theslamapp" target="_blank">
+                <img
+                  src="./src/assets/facebookLogo.svg"
+                  alt="facebook"
+                  role="button"
+              /></a>
             </div>
             <div class="border-[.3rem] border-white rounded mt-[3.7rem]"></div>
             <div
@@ -951,7 +833,7 @@
               </button>
             </div>
           </div>
-          <a href="https://app.popt.in/APIRequest/click/6614069a54ad0">Popup</a>
+          <!-- <a href="https://app.popt.in/APIRequest/click/6614069a54ad0">Popup</a> -->
         </section>
       </main>
     </div>
