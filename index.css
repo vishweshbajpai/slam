@@ -24,3 +24,7 @@ body {
   --blue-tint: "#5A749B1A";
   --orange-tint: "#FB860B4D";
 }
+
+.trynow-button:hover > svg > path {
+  fill: white;
+}
