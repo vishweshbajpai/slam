@@ -17,14 +17,29 @@ body {
 }
 
 :root {
-  --primary-blue: "#5A749B";
-  --primary-orange: "#FB860B";
-  --primary-text-color: "#030E1F";
-  --secondary-text-color: "#898989";
-  --blue-tint: "#5A749B1A";
-  --orange-tint: "#FB860B4D";
+  --primary-blue: #5a749b;
+  --primary-orange: #fb860b;
+  --primary-text-color: #030e1f;
+  --secondary-text-color: #898989;
+  --blue-tint: #5a749b1a;
+  --orange-tint: #fb860b4d;
 }
 
 .trynow-button:hover > svg > path {
   fill: white;
+}
+
+.feature-list button {
+  color: var(--secondary-text-color);
+}
+
+.feature-list button:hover {
+  color: var(--primary-text-color);
+}
+
+.nav-pills .nav-link.active {
+  background-color: transparent !important;
+  color: var(--primary-text-color) !important;
+  border-bottom: 6px solid var(--primary-blue);
+  border-radius: 0 !important;
 }
