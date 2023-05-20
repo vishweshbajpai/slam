@@ -43,14 +43,18 @@
     <div class="bg-primaryBackground">
       <!-- Header -->
       <header
-        class="px-[12rem] py-[.5rem] m-auto sticky top-0 z-20 backdrop-blur-xl shadow-md"
+        class="px-[5rem] xl:px-[12rem] py-[.5rem] m-auto sticky top-0 z-20 backdrop-blur-xl shadow-md"
       >
         <div class="flex justify-between items-center max-w-[128rem] m-auto">
-          <img src="./src/assets/slamLogoBlue.svg" alt="slam logo" />
+          <img
+            src="./src/assets/slamLogoBlue.svg"
+            alt="slam logo"
+            class="w-[20rem] sm:w-[14rem]"
+          />
           <button
             type="button"
             onclick="showPopup()"
-            class="bg-primaryOrange hover:bg-orange-600 transition rounded-[0.6rem] text-white py-[1.2rem] px-[4.8rem] text-[1.8rem] font-bold shadow-sm"
+            class="bg-primaryOrange hover:bg-orange-600 transition rounded-[0.6rem] text-white py-[1.2rem] px-[4.8rem] sm:text-[1.8rem] text-[2.4rem] font-bold shadow-sm"
           >
             Get Early Access
           </button>
@@ -58,17 +62,23 @@
       </header>
       <main>
         <!-- Banner -->
-        <section class="px-[12rem] pt-[13rem] pb-[20rem]">
+        <section
+          class="px-[5rem] xl:px-[12rem] pt-[13rem] pb-[15rem] xl:pb-[20rem]"
+        >
           <div
             class="flex flex-col items-center max-w-[128rem] m-auto relative"
           >
             <div
-              class="text-[7.8rem] font-bold text-primaryBlue whitespace-nowrap z-10"
+              class="text-[7.2rem] lg:text-[8rem] font-bold text-primaryBlue whitespace-nowrap z-10"
             >
               Start your day with
             </div>
             <div class="relative z-10">
-              <img src="./src/assets/slamWordBlue.svg" alt="slam word" />
+              <img
+                src="./src/assets/slamWordBlue.svg"
+                alt="slam word"
+                class="w-[24rem] lg:w-[26rem]"
+              />
               <img
                 src="./src/assets/underlineOrange.svg"
                 alt="orange underline"
@@ -84,7 +94,7 @@
               <button
                 type="button"
                 onclick="showPopup()"
-                class="bg-primaryOrange hover:bg-orange-600 transition rounded-[0.6rem] text-white py-[1.2rem] px-[4.8rem] text-[1.8rem] font-bold whitespace-nowrap shadow"
+                class="bg-primaryOrange hover:bg-orange-600 transition rounded-[0.6rem] text-white py-[1.2rem] px-[4.8rem] sm:text-[1.8rem] text-[2.4rem] font-bold whitespace-nowrap shadow"
               >
                 Get Early Access
               </button>
@@ -92,21 +102,23 @@
             <!-- Background images section -->
             <img
               src="./src/assets/backgroundImgOne.svg"
-              class="absolute left-0 top-[4rem]"
+              class="absolute left-0 top-[4rem] w-[25rem] sm:w-fit"
             />
             <img
               src="./src/assets/backgroundImgTwo.svg"
-              class="absolute right-0"
+              class="absolute right-0 w-[25rem] sm:w-fit"
             />
             <img
               src="./src/assets/backgroundImgRectangle.svg"
-              class="absolute left-[20rem] top-[-10rem]"
+              class="absolute left-[20rem] top-[-10rem] w-[10rem] sm:w-fit"
             />
           </div>
         </section>
         <!-- Video section -->
-        <section class="px-[12rem] pb-[10rem]">
-          <div class="flex justify-center gap-[8rem] max-w-[128rem] m-auto">
+        <section class="px-[5rem] xl:px-[12rem] pb-[10rem]">
+          <div
+            class="video-section flex justify-center gap-[8rem] max-w-[128rem] m-auto"
+          >
             <div>
               <div class="text-[4rem] text-primaryTextColor font-bold">
                 Still using multiple apps for managing your work?
@@ -131,7 +143,7 @@
           </div>
         </section>
         <!-- Features -->
-        <section class="px-[12rem] pb-[10rem]">
+        <section class="px-[5rem] xl:px-[12rem] pb-[10rem]">
           <div class="max-w-[128rem] m-auto">
             <div class="text-[4rem] text-primaryTextColor font-bold">
               Features
@@ -247,7 +259,7 @@
             </ul>
 
             <div
-              class="rounded-[4.8rem] bg-blueTint py-[7rem] ps-[8.4rem] pe-[7rem] max-w-[128rem] m-auto shadow-md"
+              class="rounded-[4.8rem] bg-blueTint p-[7rem] max-w-[128rem] m-auto shadow-md"
             >
               <div class="tab-content" id="pills-tabContent">
                 <div
@@ -257,13 +269,13 @@
                   aria-labelledby="pills-calendar-tab"
                   tabindex="0"
                 >
-                  <div class="flex gap-[1.2rem]">
+                  <div class="feature-card flex gap-[6rem] justify-center">
                     <div>
                       <div class="text-[4rem] text-primaryTextColor font-bold">
                         Calendar
                       </div>
                       <div
-                        class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em]"
+                        class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em] text-justify"
                       >
                         Streamline your workflow and save time by managing all
                         your tasks and appointments in one central location.
@@ -282,13 +294,13 @@
                   aria-labelledby="pills-pipeline-tab"
                   tabindex="0"
                 >
-                  <div class="flex gap-[1.2rem]">
+                  <div class="feature-card flex gap-[6rem] justify-center">
                     <div>
                       <div class="text-[4rem] text-primaryTextColor font-bold">
                         Pipeline
                       </div>
                       <div
-                        class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em]"
+                        class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em] text-justify"
                       >
                         This module is specifically designed for customer
                         relationship management (CRM) and provides an intuitive
@@ -308,13 +320,13 @@
                   aria-labelledby="pills-customer-tab"
                   tabindex="0"
                 >
-                  <div class="flex gap-[1.2rem]">
+                  <div class="feature-card flex gap-[6rem] justify-center">
                     <div>
                       <div class="text-[4rem] text-primaryTextColor font-bold">
                         Customer Onboarding
                       </div>
                       <div
-                        class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em]"
+                        class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em] text-justify"
                       >
                         A crucial feature of our platform that enables you to
                         streamline your onboarding process and provide a better
@@ -337,13 +349,13 @@
                   aria-labelledby="pills-projects-tab"
                   tabindex="0"
                 >
-                  <div class="flex gap-[1.2rem]">
+                  <div class="feature-card flex gap-[6rem] justify-center">
                     <div>
                       <div class="text-[4rem] text-primaryTextColor font-bold">
                         Projects
                       </div>
                       <div
-                        class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em]"
+                        class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em] text-justify"
                       >
                         An all-in-one solution for managing your projects,
                         collaborating with team members, and coordinating with
@@ -362,13 +374,13 @@
                   aria-labelledby="pills-client-tab"
                   tabindex="0"
                 >
-                  <div class="flex gap-[1.2rem]">
+                  <div class="feature-card flex gap-[6rem] justify-center">
                     <div>
                       <div class="text-[4rem] text-primaryTextColor font-bold">
                         Client Portal
                       </div>
                       <div
-                        class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em]"
+                        class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em] text-justify"
                       >
                         An integral part of our Projects module, providing our
                         clients with full transparency and visibility into the
@@ -391,13 +403,13 @@
                   aria-labelledby="pills-collaboration-tab"
                   tabindex="0"
                 >
-                  <div class="flex gap-[1.2rem]">
+                  <div class="feature-card flex gap-[6rem] justify-center">
                     <div>
                       <div class="text-[4rem] text-primaryTextColor font-bold">
                         Collaboration
                       </div>
                       <div
-                        class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em]"
+                        class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em] text-justify"
                       >
                         The Collaboration Module revolutionizes team and client
                         communication by providing a dedicated space for
@@ -421,13 +433,13 @@
                   aria-labelledby="pills-accounting-tab"
                   tabindex="0"
                 >
-                  <div class="flex gap-[1.2rem]">
+                  <div class="feature-card flex gap-[6rem] justify-center">
                     <div>
                       <div class="text-[4rem] text-primaryTextColor font-bold">
                         Accounting
                       </div>
                       <div
-                        class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em]"
+                        class="text-[1.7rem] text-secondaryTextColor mt-[1.5rem] leading-[2.8rem] tracking-[0.015em] text-justify"
                       >
                         A comprehensive solution that empowers users to
                         efficiently handle their financial transactions, create
@@ -449,7 +461,7 @@
           </div>
         </section>
         <!-- Users -->
-        <section class="px-[12rem] pb-[12rem]">
+        <section class="px-[5rem] xl:px-[12rem] pb-[12rem]">
           <div class="max-w-[128rem] m-auto">
             <div class="text-[4rem] text-primaryTextColor font-bold">
               Who it is meant for You ask?
@@ -507,7 +519,7 @@
           </div>
         </section>
         <!-- Workflow -->
-        <section class="px-[12rem]">
+        <section class="px-[5rem] xl:px-[12rem]">
           <div class="max-w-[128rem] m-auto">
             <div class="text-[4rem] text-primaryTextColor font-bold">
               Workflow
@@ -528,9 +540,9 @@
           </div>
         </section>
         <!-- Integrations -->
-        <section class="px-[12rem] pb-[14rem]">
+        <section class="px-[5rem] xl:px-[12rem] pb-[10rem] pt-[2rem]">
           <div
-            class="rounded-[4.8rem] bg-blueTint py-[3rem] px-[8.5rem] text-center max-w-[128rem] m-auto"
+            class="rounded-[4.8rem] bg-blueTint p-[3rem] text-center max-w-[128rem] m-auto"
           >
             <div class="text-[4rem] text-primaryTextColor font-bold">
               Integrations
@@ -540,45 +552,67 @@
             </div>
             <div class="flex justify-center flex-wrap gap-[3.2rem] mt-[2.4rem]">
               <div
-                class="p-[1.6rem] shadow-md rounded-xl flex items-center justify-center bg-white min-w-[12rem]"
+                class="p-[1.6rem] shadow-md rounded-xl flex items-center justify-center bg-white sm:min-w-[12rem] min-w-fit"
               >
                 <img
                   src="./src/assets/googleDriveLogo.svg"
                   alt="google drive"
+                  class="w-[5rem] sm:w-fit"
                 />
               </div>
               <div
-                class="p-[1.6rem] shadow-md rounded-xl flex items-center justify-center bg-white min-w-[12rem]"
+                class="p-[1.6rem] shadow-md rounded-xl flex items-center justify-center bg-white sm:min-w-[12rem] min-w-fit"
               >
-                <img src="./src/assets/asanaLogo.svg" alt="asana" />
+                <img
+                  src="./src/assets/asanaLogo.svg"
+                  alt="asana"
+                  class="w-[5rem] sm:w-fit"
+                />
               </div>
               <div
-                class="p-[1.6rem] shadow-md rounded-xl flex items-center justify-center bg-white min-w-[12rem]"
+                class="p-[1.6rem] shadow-md rounded-xl flex items-center justify-center bg-white sm:min-w-[12rem] min-w-fit"
               >
                 <img
                   src="./src/assets/googleCalendarLogo.svg"
                   alt="google calendar"
+                  class="w-[5rem] sm:w-fit"
                 />
               </div>
               <div
-                class="p-[1.6rem] shadow-md rounded-xl flex items-center justify-center bg-white min-w-[12rem]"
+                class="p-[1.6rem] shadow-md rounded-xl flex items-center justify-center bg-white sm:min-w-[12rem] min-w-fit"
               >
-                <img src="./src/assets/dropboxLogo.svg" alt="dropbox" />
+                <img
+                  src="./src/assets/dropboxLogo.svg"
+                  alt="dropbox"
+                  class="w-[5rem] sm:w-fit"
+                />
               </div>
               <div
-                class="p-[1.6rem] shadow-md rounded-xl flex items-center justify-center bg-white min-w-[12rem]"
+                class="p-[1.6rem] shadow-md rounded-xl flex items-center justify-center bg-white sm:min-w-[12rem] min-w-fit"
               >
-                <img src="./src/assets/slackLogo.svg" alt="slack" />
+                <img
+                  src="./src/assets/slackLogo.svg"
+                  alt="slack"
+                  class="w-[5rem] sm:w-fit"
+                />
               </div>
               <div
-                class="p-[1.6rem] shadow-md rounded-xl flex items-center justify-center bg-white min-w-[12rem]"
+                class="p-[1.6rem] shadow-md rounded-xl flex items-center justify-center bg-white sm:min-w-[12rem] min-w-fit"
               >
-                <img src="./src/assets/zapierLogo.svg" alt="zapier" />
+                <img
+                  src="./src/assets/zapierLogo.svg"
+                  alt="zapier"
+                  class="w-[5rem] sm:w-fit"
+                />
               </div>
               <div
-                class="p-[1.6rem] shadow-md rounded-xl flex items-center justify-center bg-white min-w-[12rem]"
+                class="p-[1.6rem] shadow-md rounded-xl flex items-center justify-center bg-white sm:min-w-[12rem] min-w-fit"
               >
-                <img src="./src/assets/quickbooksLogo.svg" alt="quickbooks" />
+                <img
+                  src="./src/assets/quickbooksLogo.svg"
+                  alt="quickbooks"
+                  class="w-[5rem] sm:w-fit"
+                />
               </div>
             </div>
             <div class="text-[1.7rem] text-secondaryTextColor mt-[4rem]">
@@ -587,7 +621,7 @@
           </div>
         </section>
         <!-- Advantages -->
-        <section class="px-[12rem] pt-[8rem] pb-[14rem] bg-blueTint">
+        <section class="px-[5rem] xl:px-[12rem] p-[8rem] bg-blueTint">
           <div class="text-center max-w-[128rem] m-auto">
             <div class="text-[4rem] text-primaryTextColor font-bold">
               What’s so great about it anyway?
@@ -663,8 +697,10 @@
           </div>
         </section>
         <!-- FAQs -->
-        <section class="px-[12rem] pt-[8rem] pb-[34rem]">
-          <div class="max-w-[128rem] m-auto flex justify-between">
+        <section class="px-[5rem] xl:px-[12rem] pt-[8rem] pb-[34rem]">
+          <div
+            class="faq gap-[5rem] max-w-[128rem] m-auto flex justify-center xl:justify-between"
+          >
             <div>
               <div class="text-[4rem] text-primaryTextColor font-bold">
                 Frequently asked questions
@@ -673,7 +709,7 @@
                 We know you have some questions in mind, we’ve tried to list the
                 most important ones
               </div>
-              <div class="flex gap-[4rem] flex-wrap mt-[9rem]">
+              <div class="flex gap-[4rem] flex-wrap mt-[6rem]">
                 <div class="max-w-[45%]">
                   <div class="text-[1.8rem] text-primaryTextColor font-bold">
                     Just another Projects Management app, is it?
@@ -733,12 +769,16 @@
                 </div>
               </div>
             </div>
-            <img src="./src/assets/girlImg.svg" alt="girl question" />
+            <img
+              src="./src/assets/girlImg.svg"
+              alt="girl question"
+              class="w-[44rem]"
+            />
           </div>
         </section>
         <!-- Footer -->
         <section
-          class="px-[12rem] pt-[25rem] pb-[4.5rem] bg-primaryBlue relative"
+          class="px-[5rem] xl:px-[12rem] pt-[25rem] pb-[4.5rem] bg-primaryBlue relative"
         >
           <div class="max-w-[128rem] m-auto">
             <div class="flex justify-center gap-[4rem]">
@@ -747,7 +787,7 @@
                   src="./src/assets/twitterLogo.svg"
                   alt="twitter"
                   role="button"
-                  width="48px"
+                  class="w-[6rem] sm:w-[48px]"
                 />
               </a>
               <a
@@ -758,18 +798,21 @@
                   src="./src/assets/linkedinLogo.svg"
                   alt="linkedin"
                   role="button"
+                  class="w-[6rem] sm:w-[48px]"
               /></a>
               <a href="https://www.instagram.com/theslamapp/" target="_blank">
                 <img
                   src="./src/assets/instagramLogo.svg"
                   alt="instagram"
                   role="button"
+                  class="w-[6rem] sm:w-[48px]"
               /></a>
               <a href="https://www.facebook.com/theslamapp" target="_blank">
                 <img
                   src="./src/assets/facebookLogo.svg"
                   alt="facebook"
                   role="button"
+                  class="w-[6rem] sm:w-[48px]"
               /></a>
             </div>
             <div class="border-[.3rem] border-white rounded mt-[3.7rem]"></div>
@@ -787,14 +830,18 @@
             </div>
             <!-- Overlapping section -->
             <div
-              class="absolute bg-primaryOrange rounded-tl-[2.4rem] rounded-bl-[20rem] p-[8rem] right-0 top-[-55%] text-center min-w-[75%]"
+              class="absolute bg-primaryOrange rounded-tl-[2.4rem] rounded-bl-[20rem] p-[5rem] lg:p-[8rem] right-0 top-[-55%] text-center min-w-[75%]"
             >
               <div class="flex justify-center">
                 <span class="text-white text-[3.2rem] me-[1rem]">Try </span>
-                <img src="./src/assets/slamLogoWhiteBig.svg" />
+                <img
+                  src="./src/assets/slamLogoWhiteBig.svg"
+                  alt="slam logo"
+                  class="w-[16rem]"
+                />
               </div>
               <div
-                class="text-white text-[3.2rem] mt-[1.2rem] flex items-center justify-center"
+                class="flex-wrap text-white text-[3.2rem] mt-[1.2rem] flex items-center justify-center"
               >
                 <span class="me-[1rem] whitespace-nowrap flex-wrap"
                   >Ease up your Project Management work for</span
@@ -809,7 +856,7 @@
               <button
                 type="button"
                 onclick="showPopup()"
-                class="bg-primaryBlue hover:bg-[#3e6297] transition rounded-[0.6rem] text-white py-[1.2rem] px-[4.8rem] text-[1.8rem] font-bold whitespace-nowrap shadow-md mt-[3.5rem]"
+                class="bg-primaryBlue hover:bg-[#3e6297] transition rounded-[0.6rem] text-white py-[1.2rem] px-[4.8rem] sm:text-[1.8rem] text-[2.4rem] font-bold whitespace-nowrap shadow-md mt-[3.5rem]"
               >
                 Get Early Access
               </button>
